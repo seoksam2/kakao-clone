@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .father {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: hotpink;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>
+
+<!-- ---------------
+Flex box
+
+justify-content : Flex 요소들을 가로상의 정렬
+align-items : Flex 요소들을 세로상의 정렬
+flex-direction : 정렬한 방향 지정
+order : Flex요소의 순서 지정
+align-self : 지정된 align-items 값을 무시하고 Flex 요소를 세로상의 정렬
+flex-wrap : Flex 요소들을 한 줄 또는 여러 줄에 걸쳐 정렬
+flex-flow : flex-direction, flex-wrap 간략화 한 속성
+align-content : 세로선 상에 여분의 공간의 있는 경우 Flex 컨테이너 사이의 간격 조절 
+--------------- -->
