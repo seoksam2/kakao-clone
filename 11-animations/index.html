@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .box {
+        width: 1000px;
+        height: 1000px;
+        background-color: royalblue;
+        animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+      }
+
+      /* @keyframes identifier {
+        from {
+        }
+        to {
+        }
+      } */
+
+      @keyframes scaleAndRotateSquare {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          background-color: chocolate;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

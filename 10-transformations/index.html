@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transformations</title>
     <style>
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: brown;
-            transition: transform 1s ease-in-out;
-        }
+      .box {
+        width: 1000px;
+        height: 1000px;
+        background-color: royalblue;
+        transition: transform 0.5s ease-in-out;
+        transition: all 2s ease-in-out;
+      }
 
-        .box:hover {
-            transform: rotate(1turn);
-        }
-
-        .father {
-            display: flex;
-            flex-direction: row;
-        }
+      .box:hover {
+        transform: rotate(10turn) scale(0.5, 0.5);
+        background-color: skyblue;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-</body>
-
+  <body>
+    <div class="box"></div>
+  </body>
 </html>
